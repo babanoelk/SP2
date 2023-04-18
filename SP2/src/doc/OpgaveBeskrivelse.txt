@@ -70,11 +70,10 @@ c.    getWhPrKm(); // returns the power consumption in watt hours per driven kil
 Lav attributer til battery capacity og max range, som initialiseres i konstruktøren.
 Beregn watt-timer per kilometer ud fra disse to attributter.
 
--Mangler
 De tre konkrete (ikke-abstrakte) klasser, GasolineCar, DieselCar og ElectricCar
 skal overskrive toString() metoden, så den returnerer en String, der repræsenterer bilen på en overskuelig måde.
 
--Mangler
+
 Herefter kan de tre konkrete klasser kalde deres super-klassers toString() metode og blot tilføje de
 ekstra attributter, der er i den konkrete biltype.
 

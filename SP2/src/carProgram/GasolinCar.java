@@ -30,6 +30,8 @@ public class GasolinCar extends AFuelCar {
 
     @Override
     public String toString() {
-        return "This is a: "+getMake()+"⧵n Model: "+getModel()+"⧵n Doors: "+getNumberOfDoors()+"⧵n kmPrLitre: "+kmPrLitre+"⧵n Nummerplate: "+getRegistrationNumber()+"⧵n FuelType: "+getFuelType();
+        return super.toString()+"Brand: " + getMake() + ", Model: " + getModel() + ", Number of Doors: " + getNumberOfDoors()
+                + ", Km/Liter: " + kmPrLitre + ", Number Plate: " + getRegistrationNumber() + ", Fuel Type: " + getFuelType()
+                + "\n"+"Registration Fee: " + getRegistrationFee()+"\n";
     }
 }

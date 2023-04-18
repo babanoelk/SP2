@@ -4,6 +4,7 @@ public class DieselCar extends AFuelCar {
 
     private String fuelType;
     public boolean particleFilter;
+    public AFuelCar c1;
 
     public DieselCar(String registrationNumber, String make, String model, int doors, int kmPrLitre, String fuelType, boolean particleFilter) {
         super(registrationNumber, make, model, doors, kmPrLitre);
@@ -44,6 +45,9 @@ public class DieselCar extends AFuelCar {
 
     @Override
     public String toString() {
-        return "This is a: "+getMake()+"⧵n Model: "+getModel()+"⧵n Doors: "+getNumberOfDoors()+"⧵n kmPrLitre: "+kmPrLitre+"⧵n Nummerplate: "+getRegistrationNumber()+"⧵n FuelType: "+getFuelType()+"⧵n ParticleFilter: "+particleFilter;
+        return super.toString()+"Brand: "+getMake()+", Model: "+getModel()+", Number of Doors: "+getNumberOfDoors()+", Km/Liter: "+kmPrLitre
+                +", Number Plate: "+getRegistrationNumber()+", Fuel Type: "+getFuelType()
+                +", Particle filter status: "+particleFilter
+                + "\n"+"Registration Fee: " +getRegistrationFee()+"\n";
     }
 }
