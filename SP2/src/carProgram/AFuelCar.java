@@ -2,8 +2,8 @@ package carProgram;
 
 abstract class AFuelCar extends ACar{
     int kmPrLitre;
-    public int carCounter = 0;
-    public static int i = 0;
+    private int carCounter = 0;
+    private static int i = 0;
 
     public AFuelCar(String registrationNumber, String make, String model, int doors, int kmPrLitre) {
         super(registrationNumber, make, model, doors);

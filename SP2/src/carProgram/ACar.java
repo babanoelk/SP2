@@ -6,8 +6,8 @@ public abstract class ACar implements Car {
     private final String brand;
     private final String model;
     private final int getNumberOfDoors;
-    public int i = 0;
-    public static int k = 0;
+    private int i = 0;
+    private static int k = 0;
 
 
     public ACar(String registrationNumber, String brand, String model, int doors) {

@@ -4,7 +4,6 @@ public class DieselCar extends AFuelCar {
 
     private String fuelType;
     public boolean particleFilter;
-    public AFuelCar c1;
 
     public DieselCar(String registrationNumber, String make, String model, int doors, int kmPrLitre, String fuelType, boolean particleFilter) {
         super(registrationNumber, make, model, doors, kmPrLitre);
