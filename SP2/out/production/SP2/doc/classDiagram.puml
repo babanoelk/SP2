@@ -1,0 +1,76 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+Class Main{
+public void main()
+}
+
+Class FleetOfCars{
+ArrayList<Car> fleet
+void AddCar(Car car)
+int getTotalRegistrationFeeForFleet()
+@Override String toString()
+}
+
+Class GasolinCar{
+int getRegistrationFee()
+@Override String toString()
+}
+
+Class DieselCar{
+boolean particleFilter
+boolean hasParticleFilter()
+int boolean getRegistrationFee()
+@Override String toString()
+}
+
+Class ElectricCar{
+int batteryCapacity
+int maxRange
+int getBatteryCapacitykWt()
+int getMaxRangeKm()
+int getWhPrKm()
+int getRegistrationFee()
+@Override String toString
+}
+
+Interface Car{
+String getRegistrationNumber()
+String getMake()
+String getModel()
+int getNumberOfDoors()
+int getRegistrationFee()
+}
+
+Abstract ACar{
+String registrationNumber
+String make
+String model
+int numberOfDoors
+String getRegistrationNumber()
+String getMake()
+String getModel()
+int getNumberOfDoors()
+@Override String toString()
+}
+
+Abstract AFuelCar{
+int kmPrLitre
+String getFuelType()
+int getKmPrLitre()
+@Override String toString()
+}
+
+
+Main *-- FleetOfCars
+FleetOfCars *-- Car
+Car *-- ACar
+ACar *-- AFuelCar
+ACar *-- ElectricCar
+AFuelCar *-- GasolinCar
+AFuelCar *-- DieselCar
+
+
+
+@enduml
